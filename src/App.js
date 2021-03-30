@@ -28,7 +28,10 @@ function App() {
 
   return (
     <div className = 'App'>
-      <Header date = {photoData.date} />
+      <Header 
+        date = {photoData.date} 
+        title = {photoData.title}
+        />
       <Photo 
         photo = {photoData.url} 
         info = {photoData.explanation}
