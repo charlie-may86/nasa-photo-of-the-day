@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import '../'
 
 // const Header = (props) => {
 //   const { date, title } = props;
@@ -17,6 +18,7 @@ import styled from "styled-components";
 const StyledHeader = styled.header`
   h1 {
     color: ${(pr) => pr.theme.primaryColor};
+
   }
 
   h2 {
