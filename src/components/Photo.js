@@ -1,22 +1,22 @@
 import React from "react";
+import styled from "styled-components";
 
+const StyledParagraph = styled.div`
+  p {
+    color: ${(pr) => pr.theme.paragraphColor};
+  }
+`;
 
-const Photo = (props) => {
-
-    const { photo, info } = props;
-    
-    return (
-        <div className = 'photo'>
-            <div className = 'photoDiv'>
-                <img src = {photo} alt=""/>
-            </div>
-            <div className = 'explanation'>
-                <p>
-                    {info}
-                </p>
-            </div>
-        </div>
-    )
+export default function Photo({ photo, info }) {
+  return (
+    <div className="photo">
+      <div className="photoDiv">
+        <img src={photo} alt="" />
+      </div>
+      <StyledParagraph>
+        <p>{info}</p>
+      </StyledParagraph>
+    </div>
+  );
 }
 
-export default Photo;
